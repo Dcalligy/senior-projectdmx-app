@@ -1,6 +1,6 @@
 {
 	"auth": {
-		"projectdmxreactappfe962721": {
+		"projectdmxreactapped272ebf": {
 			"service": "Cognito",
 			"providerPlugin": "awscloudformation",
 			"dependsOn": [],

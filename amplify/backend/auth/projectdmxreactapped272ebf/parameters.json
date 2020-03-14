@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "projectdmxreactappfe962721_identitypool_fe962721",
+    "identityPoolName": "projectdmxreactapped272ebf_identitypool_ed272ebf",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "projecfe962721",
-    "userPoolName": "projectdmxreactappfe962721_userpool_fe962721",
+    "resourceNameTruncated": "projeced272ebf",
+    "userPoolName": "projectdmxreactapped272ebf_userpool_ed272ebf",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -28,9 +28,9 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "projecfe962721_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "projeced272ebf_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "resourceName": "projectdmxreactappfe962721",
+    "resourceName": "projectdmxreactapped272ebf",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [

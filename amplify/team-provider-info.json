@@ -1,19 +1,19 @@
 {
-    "projectdmx": {
+    "sighupenv": {
         "awscloudformation": {
-            "AuthRoleName": "amplify-projectdmx-react-app-projectdmx-81944-authRole",
-            "UnauthRoleArn": "arn:aws:iam::612333773348:role/amplify-projectdmx-react-app-projectdmx-81944-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::612333773348:role/amplify-projectdmx-react-app-projectdmx-81944-authRole",
+            "AuthRoleName": "amplify-projectdmx-react-app-sighupenv-90822-authRole",
+            "UnauthRoleArn": "arn:aws:iam::612333773348:role/amplify-projectdmx-react-app-sighupenv-90822-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::612333773348:role/amplify-projectdmx-react-app-sighupenv-90822-authRole",
             "Region": "us-east-1",
-            "DeploymentBucketName": "amplify-projectdmx-react-app-projectdmx-81944-deployment",
-            "UnauthRoleName": "amplify-projectdmx-react-app-projectdmx-81944-unauthRole",
-            "StackName": "amplify-projectdmx-react-app-projectdmx-81944",
-            "StackId": "arn:aws:cloudformation:us-east-1:612333773348:stack/amplify-projectdmx-react-app-projectdmx-81944/1909dcc0-65ee-11ea-9e17-12c1d85cca19",
+            "DeploymentBucketName": "amplify-projectdmx-react-app-sighupenv-90822-deployment",
+            "UnauthRoleName": "amplify-projectdmx-react-app-sighupenv-90822-unauthRole",
+            "StackName": "amplify-projectdmx-react-app-sighupenv-90822",
+            "StackId": "arn:aws:cloudformation:us-east-1:612333773348:stack/amplify-projectdmx-react-app-sighupenv-90822/e3977140-65f4-11ea-91b1-0e23aa861d3d",
             "AmplifyAppId": "d1069zkadkvodb"
         },
         "categories": {
             "auth": {
-                "projectdmxreactappfe962721": {}
+                "projectdmxreactapped272ebf": {}
             }
         }
     }
