@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component} from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Navbar from './components/Navbar';
+import Groups from './components/Groups';
+import Login from './components/forms/Login';
+import CreateAccount from './components/forms/CreateAccount';
+import Footer from './components/Footer';
+import {render} from '@testing-library/react';
+import Amplify, { Auth }  from 'aws-amplify';
+import awsconfig from './aws-exports';
+Amplify.configure(awsconfig);
+
+class App extends Component {
+  render(){
+    return (
+      <div className="App">
+        <Router>
+          <div>
+            <Navbar />
+              <Switch>
+                <Route exact path="/CreateAccount" component={CreateAccount}/>
+                <Route exact path="/Groups" component={Groups}/>
+                <Route exact path="/" component={Login}/>
+              </Switch>
+              <Footer/>
+          </div>
+        </Router>
+      </div>
+    );
+  }
 }
-
 export default App;

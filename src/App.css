@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Fix to adjust for variable screen size */
+.row.display-flex {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+}
+
+/* Custom version of navbar, to allow the green color */
+nav.navbar.navbar-custom{
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background-color: #0E4700;
+}
+
+/* Edit to the "navbar-brand" class, to make font larger, text color white, and make them further apart. This is used for the links in navbar */
+.navbar-brand {
+  font-size: 12pt;
+  display: inline-block;
+  padding: 10px;
+  color: white;
+}
+  
+ul.nav.navbar-nav {
+  display: inline-block;
+  flex-wrap: wrap;
+  padding: 10px;
+  text-align: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.btn.btn-custom{
+  display: block;
+  padding: 10px;
+  background-color: #0E4700;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Customized buttons */
+.btn.btn-form {
+  display: block;
+  background-color: #0E4700;
+  color: white;
+}
+
+/* Top headers for page are centered and dark green */
+h1 {
+  text-align: center;
+  color: #0E4700;
+}
+
+/* footer is fixed to bottom of screen, and is styled. */
+footer {
+  position: fixed;
+  padding: 10px;
+  bottom: 0;
+  left: 0;
+  background-color: gray;
+  color: black;
+  text-align: center;
+  width: 100%;
+  height: 4%;
+  font-size: 12pt;
+}
+
+label{
+  font-size: 12pt;
+  margin-bottom: 0.25;
+  display: inline-block;
+}
+
+input{
+  padding: 10px 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid;
+}
+
+input.error{
+  border: 1px solid red;
+}
+
+.errorMessage{
+  color: red;
+  font-size: 12px;
+  display: relative;
+}
+
+.username, .email, .firstName, .lastName, .password, .confirmPassword{
+  display: flex;
+  font-size: 12pt;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 100%;
 }
