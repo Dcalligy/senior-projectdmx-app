@@ -55,7 +55,7 @@ class CreateAccount extends Component{
                 .then(data => console.log(data))
                 .catch(err => console.log(err));
                 console.log(signUpResponse);
-                this.props.history.push("/Groups");
+                this.props.history.push("/welcome");
         } catch(error){
             let err = null;
             !error.message ? err = { "message" : error } : err = error;

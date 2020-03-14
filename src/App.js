@@ -2,9 +2,9 @@ import React, { Component} from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-
+import Welcome from './components/forms/Welcome';
 import Navbar from './components/Navbar';
-import Groups from './components/Groups';
+//import Groups from './components/Welcome';
 import Login from './components/forms/Login';
 import CreateAccount from './components/forms/CreateAccount';
 import Footer from './components/Footer';
@@ -21,9 +21,8 @@ class App extends Component {
           <div>
             <Navbar />
               <Switch>
-                <Route exact path="/CreateAccount" component={CreateAccount}/>
-                <Route exact path="/Groups" component={Groups}/>
-                <Route exact path="/" component={Login}/>
+                <Route exact path="/" component={CreateAccount}/>
+                <Route exact path="/welcome" component={Welcome}/>
               </Switch>
               <Footer/>
           </div>

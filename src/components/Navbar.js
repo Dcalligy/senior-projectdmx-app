@@ -11,9 +11,9 @@ export default class NavBar extends Component{
                   <div className="navbar-header">
       
                     <ul className="nav navbar-nav">
-                      <a className="navbar-brand" href="/CreateAccount"style={{color: 'gray'}}>USF</a>
-                      <a className="navbar-brand" href="/Home">Home</a>
-                      <a className="navbar-brand" href="/Groups">Groups</a>
+                      <a className="navbar-brand" href="#"style={{color: 'gray'}}>USF</a>
+                      <a className="navbar-brand" href="#">Home</a>
+                      <a className="navbar-brand" href="#">Groups</a>
                     </ul>
                   </div>
       
