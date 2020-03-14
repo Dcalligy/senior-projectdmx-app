@@ -137,7 +137,7 @@ class CreateAccount extends Component{
                             <label htmlFor="password">Enter a Password:</label>
                             <input
                                 className="input"
-                                placeholder="Enter a Password"
+                                placeholder="Password"
                                 type="password"
                                 id="password"
                                 value={this.state.password}
